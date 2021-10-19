@@ -1,0 +1,8 @@
+#!/bin/bash
+total=`ls /home/ubuntu/vinod/ | wc -l`
+oldfiles=`expr $total - 5`
+if [ $oldfiles -gt 0 ]
+then
+	ls -rt | head -$oldfiles | xargs rm -rf
+fi
+13 07 14 10 04
