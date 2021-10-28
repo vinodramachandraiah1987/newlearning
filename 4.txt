@@ -6,3 +6,5 @@ then
 	ls -rt | head -$oldfiles | xargs rm -rf
 fi
 13 07 14 10 04
+
+<This Script is for removing old files>
